@@ -21,20 +21,20 @@ CC BY-SA 2.0 [Catrin Austin](https://www.flickr.com/photos/catrinaustin/59158918
     import pygame
     from pygame.locals import*
     ```
-1. Next you need to initialise pygame and then use a few variable to store some important constants. We want to set a screen fill colour, and the width and height of the images we're going to use.
+1. Next you need to initialise pygame and then use a few variable to store some important constants. We want to set a screen fill colour, and the width and height of the largest image we're going to use.
 
     ``` python
     pygame.init()
-    white = (255, 255, 255)
-    w = 1280
-    h = 675
+    black = (0, 0, 0)
+    w = 1024
+    h = 683
     ```
     
 1. Lastly for this section, you can instruct pygame to create a full-screen window that is filled with the colour white.
 
     ``` python
     screen = pygame.display.set_mode((w, h), FULLSCREEN)
-    screen.fill((white))
+    screen.fill((black))
     ```
 
 1. Save your file and call it `run_me.py` (so we don't give anything away), and then run it by pressing `F5`.
@@ -45,7 +45,7 @@ CC BY-SA 2.0 [Catrin Austin](https://www.flickr.com/photos/catrinaustin/59158918
 1. To display an image in pygame you first need to load the image up. You can start with the spot the difference image. Place this line below the `pygame.init()` line.
 
 ``` python
-difference = pygame.image.load('Spot_the_difference.jpg')
+difference = pygame.image.load('spot_the_difference.jpg')
 ```
 
 1. Then in graphics terminology you need to *blit* the image onto the window, and then update the display, to show it.
