@@ -10,7 +10,7 @@ CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=1864947
 1. Then you'll need the image you're going to swap out to give them a fright. This hippo one should do the trick, but you can find your own online if you like.
 ![image](images/hippo.jpg)
 CC BY-SA 2.0 [Catrin Austin](https://www.flickr.com/photos/catrinaustin/5915891844)
-1. Lastly you'll need a scary sound to really give them a fright. You can download [this](http://soundbible.com/1627-Female-Scream-Horror.html) one, which should do the trick.
+1. Lastly you'll need a scary sound to really give them a fright. You can download [this](http://soundbible.com/1627-Female-Scream-Horror.html) one, which should do the trick. Make sure you download the `wav` version of the file.
 1. Save all the files in a single directory, where your python script will be.
 
 ## Setting up the pygame window
@@ -82,20 +82,11 @@ difference = pygame.image.load('Spot_the_difference.jpg')
 1. Save and run the program again, to see the new image being placed.
 
 ## Adding some sound
-1. The prank becomes far more scary if you add in a little sound into the mix. The first thing you'll need to do is convert the sound to a wav file.
-1. Open up a terminal by pressing `ctrl`+`alt`+`t`
-1. Then, making sure you are in the directory where the sound file is located, type:
 
-``` bash
-avconv -i Female_Scream_Horror-NeoPhyTe-138499973.mp3 scream.wav
-```
-
-This converts the sound to a `wav` file and renames it to `scream.wav`
-
-1. Back in Python, just like you did with the images, the sound needs to be loaded up first.
+1. In Python, just like you did with the images, the sound needs to be loaded up first.
 
     ``` python
-    scream = pygame.mixer.Sound("scream.wav")
+    scream = pygame.mixer.Sound("Female_Scream_Horror-NeoPhyTe-138499973.mp3")
     ```
 
 1. Then, you want to start playing the sound, just before the second image is shown, as soon as the sleep has finished.
