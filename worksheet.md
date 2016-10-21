@@ -5,7 +5,7 @@ While the player is busily trying to figure out the difference between two image
 
 ## Gathering the assets.
 1. You're going to need two images and a sound file for this activity. Firstly you'll need a *spot the difference image*. This one is free to use, but you can make or find your own if you prefer.
-![image](images/spot_the_difference.jpg)
+![image](images/spot_the_difference.png)
 CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=1864947
 1. Then you'll need the image you're going to swap out to give them a fright. This hippo one should do the trick, but you can find your own online if you like.
 ![image](images/hippo.jpg)

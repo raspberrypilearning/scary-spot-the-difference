@@ -9,8 +9,8 @@ difference = pygame.image.load('Halloween_Spot_the_Diff.png')
 angel = pygame.image.load('Scary_Face.png')
 
 white = (255, 255, 255)
-w = 1280
-h = 675
+w = 1920
+h = 1080
 screen = pygame.display.set_mode((w, h), FULLSCREEN)
 
 screen.fill((white))
