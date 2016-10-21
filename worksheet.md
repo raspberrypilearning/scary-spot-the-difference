@@ -5,88 +5,125 @@ While the player is busily trying to figure out the difference between two image
 
 ## Gathering the assets.
 1. You're going to need two images and a sound file for this activity. Firstly you'll need a *spot the difference image*. This one is free to use, but you can make or find your own if you prefer.
-![image](images/spot_the_difference.png)
-CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=1864947
-1. Then you'll need the image you're going to swap out to give them a fright. This hippo one should do the trick, but you can find your own online if you like.
-![image](images/hippo.jpg)
-CC BY-SA 2.0 [Catrin Austin](https://www.flickr.com/photos/catrinaustin/5915891844)
-1. Lastly you'll need a scary sound to really give them a fright. You can download [this](http://soundbible.com/1627-Female-Scream-Horror.html) one, which should do the trick. Make sure you download the `wav` version of the file.
+   ![image](images/spot_the_diff.png)
+
+1. Then you'll need the image you're going to swap out to give them a fright. This zombie face is cool, but you can make or find your own if you like. Just remember the age of the people you're trying to scare and choose something appropriate.
+
+	![image](images/scary_face.png)
+
+1. Lastly you'll need a scary sound to really give them a fright. You can download [this](http://soundbible.com/1627-Female-Scream-Horror.html) one, which should do the trick. Make sure you download the `wav` version of the file, or again find your own. Once you have the file, rename it to `scream.wav`.
+
 1. Save all the files in a single directory, where your python script will be.
 
-## Setting up the pygame window
+## Setting up your file
+
 1. Open IDLE by clicking on `Menu`>``Programming`>`Python 3 (IDLE)`. Then click `File` and `New File`.
-1. The new window that opens up will be where you can write the code. To begin with you'll need to import the pygame library and some of it's modules.
+
+1. Save your file straight away, in the **same** directory as your images. If you call it `run_me.py` then you won't be giving the game away to your victim.
+
+1. To begin with you'll need to import the pygame library and some of it's modules. You're also going to need the `sleep` and `randrange` functions.
 
     ``` python
     import pygame
     from pygame.locals import*
+	from time import sleep
+	from random import randrange
     ```
-1. Next you need to initialise pygame and then use a few variable to store some important constants. We want to set a screen fill colour, and the width and height of the largest image we're going to use.
+	
+1. Next you need to initialise pygame so that it is ready to be used. As different monitors have different sizes, you need to find out the width and height of your monitor, and save them as variables.
 
     ``` python
-    pygame.init()
-    black = (0, 0, 0)
-    w = 1024
-    h = 683
-    ```
+	pygame.init()
+
+	width = pygame.display.Info().current_w
+	height = pygame.display.Info().current_h
+	```
     
-1. Lastly for this section, you can instruct pygame to create a full-screen window that is filled with the colour white.
+1. Lastly for this section, you can instruct pygame to create a full-screen window for the game to be played in, and then get pygame to quit.
 
     ``` python
-    screen = pygame.display.set_mode((w, h), FULLSCREEN)
-    screen.fill((black))
+	screen = pygame.display.set_mode((width, height), FULLSCREEN)
+	
+	pygame.quit()
     ```
 
-1. Save your file and call it `run_me.py` (so we don't give anything away), and then run it by pressing `F5`.
+1. Save your file again and then run it by pressing `F5`.
 
-1. You should see a blank rectangular window open. This is the pygame window. You can quit this by clicking on the cross in the upper corner of the window.
+1. You should see a blank rectangular window open. This is the pygame window. It should close itself straight away, as your program reaches the `pygame.quit()` line.
 
 ## Displaying and image
-1. To display an image in pygame you first need to load the image up. You can start with the spot the difference image. Place this line below the `pygame.init()` line.
+1. To display an image in pygame you first need to load the image up. You can start with the spot the difference image. Place this line *above* the `pygame.quit()` line. If you've used a different image, don't forget to change the name.
 
-``` python
-difference = pygame.image.load('spot_the_difference.jpg')
-```
+	``` python
+	difference = pygame.image.load('spot_the_difference.jpg')
+	```
 
-1. Then in graphics terminology you need to *blit* the image onto the window, and then update the display, to show it.
+1. The image may be too big or too small for your monitor, so the next step is to scale it using the `width` and `height` variables you created earlier.
+
+	```python
+	difference = pygame.transform.scale(difference, (width, height))
+	```
+	
+1. These lines have just loaded the image into the Raspberry Pi memory. To display them on the screen you need to *blit* the image onto the window, and then update the display, to show it.
 
     ``` python
     screen.blit(difference, (0, 0))
     pygame.display.update()
     ```
-    This line blits the image to the coordinates x = 0 and y = 0. That is, the top left corner of the image is being place in the top left corner of the window.
+	
+    This line blits the image to the coordinates `x = 0` and `y = 0`. That is, the top left corner of the image is being place in the top left corner of the window.
 
 1. Save and run the file again to see the image displayed.
 
+1. You might find that the image does not display for long enough for you to see it, so you can add a small `sleep` to the end of the program, just before pygame quits.
+
+	```python
+	screen.blit(difference, (0,0))
+	pygame.display.update()
+	
+	sleep(3)
+	pygame.quit()
+	```
+
 ## Switching images.
-1. To switch the image to the scary one, you need to add a pause and then re-blit another image. To pause the program for awhile, you'll need the `time` module. Add this below your other `imports`.
+1. To switch the image to the scary one, you need to add a pause and then re-blit another image.
+1. First, you load the **scary** image into memory and scale it in the same way you did before with the `difference` image.
+
+	```python
+	zombie = pygame.image.load('Scary_Face.png')
+	zombie = pygame.transform.scale(zombie, (width, height))
+	```
+	
+1. Then get your program to pause for a few seconds.
+
+	```python
+	sleep(3)
+	```
+1. Then you can *blit* the image to the display and update the display.
 
     ``` python
-    from time import sleep
-    ```
-
-1. Then add this line to load the scary image.
-
-    ``` python
-    hippo = pygame.image.load('hippo.jpg')
-    ```
-
-1. Now the program can be paused for 15 seconds or so, before you blit the new image. Add this to the end of the script.
-
-    ``` python
-    sleep(15)
-    screen.blit(hippo, (0,0))
-    pygame.display.update()
+	screen.blit(zombie, (0,0))
+	pygame.display.update()
     ```
 
 1. Save and run the program again, to see the new image being placed.
 
+1. It's a little predictable at the moment, so you can add some randomness by changing the `sleep` time between the two images to a random number.
+
+	```python
+	sleep(randrange(5,15))
+	```
+	
 ## Adding some sound
 
-1. In Python, just like you did with the images, the sound needs to be loaded up first.
+1. Now its time to add the scream, to make the game a little scarier. In Python, just like you did with the images, the sound needs to be loaded up first. You want to do this **before** the second image is displayed. Change your code so it looks like this:
 
     ``` python
-    scream = pygame.mixer.Sound("Female_Scream_Horror-NeoPhyTe-138499973.mp3")
+	zombie = pygame.transform.scale(zombie, (width, height))
+
+	scream = pygame.mixer.Sound("scream.wav")
+	
+	sleep(randrange(5,15))
     ```
 
 1. Then, you want to start playing the sound, just before the second image is shown, as soon as the sleep has finished.
@@ -95,21 +132,55 @@ difference = pygame.image.load('spot_the_difference.jpg')
     scream.play()
     ```
 
-1. Add a small pause to play the sound for a few seconds.
-
-    ``` python
-    sleep(3)
-    ```
-
-1. Then stop the scream and quit pygame.
+1. Then stop the scream just before pygame quits.
 
     ``` python
     scream.stop()
     pygame.quit()
     ```
 
+1. You might find, that depending on your Raspberry Pi model, the scream takes a little time to start playing. You could therefore, add a little sleep just after the `scream.play()` line.
+
+1. Your complete code should look like this:
+
+	```python
+	import pygame
+	from pygame.locals import*
+	from time import sleep
+	from random import randrange
+
+	pygame.init()
+
+	width = pygame.display.Info().current_w
+	height = pygame.display.Info().current_h
+
+	screen = pygame.display.set_mode((width, height), FULLSCREEN)
+
+	difference = pygame.image.load('spot_the_diff.png')
+	difference = pygame.transform.scale(difference, (width, height))
+
+	screen.blit(difference, (0,0))
+	pygame.display.update()
+
+	zombie = pygame.image.load('scary_face.png')
+	zombie = pygame.transform.scale(zombie, (width, height))
+
+	scream = pygame.mixer.Sound("scream.wav")
+
+	sleep(randrange(5,15))
+
+	scream.play()
+	sleep(0.4)
+	screen.blit(zombie, (0,0))
+	pygame.display.update()
+
+	sleep(3)
+	scream.stop()
+	pygame.quit()
+	```
+	
 ## Pranking your friends
 1. Now all you need to do is have a friend come and try out your *Spot the difference* game. Tell them they have a minute to find as many differences as they can, and then watch them jump out of their skins when the scary image appears.
 
 ## What next?
-1. Why not have a go at some more fun pranks with a physical element such as the [Grandpa Scarer]() or the [WhoopPi Cushion]()
+1. Maybe you could make the game a little more realistic. Have a look at the [Pygame website](http://www.pygame.org/docs/tut/newbieguide.html) and see if you can learn how to capture mouse clicks. Maybe the game could keep a fake score of differences spotted, before the scary face jumps out.

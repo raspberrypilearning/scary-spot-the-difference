@@ -1,27 +1,33 @@
 import pygame
 from pygame.locals import*
 from time import sleep
+from random import randrange
 
 pygame.init()
 
-scream = pygame.mixer.Sound("scream.wav")
-difference = pygame.image.load('Halloween_Spot_the_Diff.png')
-angel = pygame.image.load('Scary_Face.png')
+width = pygame.display.Info().current_w
+height = pygame.display.Info().current_h
 
-white = (255, 255, 255)
-w = 1280
-h = 675
-screen = pygame.display.set_mode((w, h), FULLSCREEN)
+screen = pygame.display.set_mode((width, height), FULLSCREEN)
 
-screen.fill((white))
+difference = pygame.image.load('spot_the_diff.png')
+difference = pygame.transform.scale(difference, (width, height))
+
 screen.blit(difference, (0,0))
 pygame.display.update()
-sleep(15)
+
+zombie = pygame.image.load('scary_face.png')
+zombie = pygame.transform.scale(zombie, (width, height))
+
+scream = pygame.mixer.Sound("scream.wav")
+
+sleep(randrange(5,15))
+
 scream.play()
-screen.blit(angel, (0,0))
+sleep(0.4)
+screen.blit(zombie, (0,0))
 pygame.display.update()
 
 sleep(3)
 scream.stop()
 pygame.quit()
-
