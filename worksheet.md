@@ -1,27 +1,28 @@
 # Scary Spot the Difference
 
-In this resource you will make a spot the difference game, with a *difference!*
-While the player is busily trying to figure out the difference between two images, focused intently on the screen, they'll have no idea they're about to receive the fright of their lives.
+In this resource you will make a Spot the Difference game with a difference! While the player is focused intently on the screen trying to figure out the difference between two images, they'll have no idea they're about to receive the fright of their lives.
 
-## Gathering the assets.
-1. You're going to need two images and a sound file for this activity. Firstly you'll need a *spot the difference image*. This one is free to use, but you can make or find your own if you prefer.
+## Gathering the assets
+
+1. You're going to need two images and a sound file for this activity. Firstly, you'll need a Spot the Difference image. This one is free to use, but you can make or find your own if you prefer.
+
    ![image](images/spot_the_diff.png)
 
-1. Then you'll need the image you're going to swap out to give them a fright. This zombie face is cool, but you can make or find your own if you like. Just remember the age of the people you're trying to scare and choose something appropriate.
+1. Next, you'll need the image you're going to swap out to give them a fright. This zombie face is cool, but you can make or find your own if you like. Just remember the age of the people you're trying to scare and choose something appropriate.
 
 	![image](images/scary_face.png)
 
-1. Lastly you'll need a scary sound to really give them a fright. You can download [this](http://soundbible.com/1627-Female-Scream-Horror.html) one, which should do the trick. Make sure you download the `wav` version of the file, or again find your own. Once you have the file, rename it to `scream.wav`.
+1. Lastly, you'll need a scary sound to really give them a fright. You can download [this one](http://soundbible.com/1627-Female-Scream-Horror.html), which should do the trick. Make sure you download the `wav` version of the file, or again find your own. Once you have the file, rename it to `scream.wav`.
 
-1. Save all the files in a single directory, where your python script will be.
+1. Save all the files in a single directory, where your Python script will be.
 
 ## Setting up your file
 
-1. Open IDLE by clicking on `Menu`>``Programming`>`Python 3 (IDLE)`. Then click `File` and `New File`.
+1. Open IDLE by clicking on Menu> Programming > Python 3 (IDLE), then click File and New File.
 
-1. Save your file straight away, in the **same** directory as your images. If you call it `run_me.py` then you won't be giving the game away to your victim.
+1. Save your file straight away, in the same directory as your images. If you call it `run_me.py`, you won't be giving the game away to your victim.
 
-1. To begin with you'll need to import the pygame library and some of it's modules. You're also going to need the `sleep` and `randrange` functions.
+1. To begin with, you'll need to import the Pygame library and some of its modules. You're also going to need the `sleep` and `randrange` functions.
 
     ``` python
     import pygame
@@ -30,7 +31,7 @@ While the player is busily trying to figure out the difference between two image
 	from random import randrange
     ```
 	
-1. Next you need to initialise pygame so that it is ready to be used. As different monitors have different sizes, you need to find out the width and height of your monitor, and save them as variables.
+1. Next, you need to initialise Pygame so that it's ready to be used. As different monitors have different sizes, you need to find out the width and height of your monitor, and save them as variables.
 
     ``` python
 	pygame.init()
@@ -39,7 +40,7 @@ While the player is busily trying to figure out the difference between two image
 	height = pygame.display.Info().current_h
 	```
     
-1. Lastly for this section, you can instruct pygame to create a full-screen window for the game to be played in, and then get pygame to quit.
+1. Lastly for this section, you can instruct Pygame to create a full-screen window for the game to be played in, and then get Pygame to quit.
 
     ``` python
 	screen = pygame.display.set_mode((width, height), FULLSCREEN)
@@ -49,33 +50,34 @@ While the player is busily trying to figure out the difference between two image
 
 1. Save your file again and then run it by pressing `F5`.
 
-1. You should see a blank rectangular window open. This is the pygame window. It should close itself straight away, as your program reaches the `pygame.quit()` line.
+1. You should see a blank rectangular window open. This is the Pygame window. It should close itself straight away, as your program reaches the `pygame.quit()` line.
 
-## Displaying and image
-1. To display an image in pygame you first need to load the image up. You can start with the spot the difference image. Place this line *above* the `pygame.quit()` line. If you've used a different image, don't forget to change the name.
+## Displaying an image
+
+1. To display an image in Pygame, you first need to load the image. You can start with the Spot the Difference image. Place this line above the `pygame.quit()` line. If you've used a different image, don't forget to change the name.
 
 	``` python
 	difference = pygame.image.load('spot_the_difference.jpg')
 	```
 
-1. The image may be too big or too small for your monitor, so the next step is to scale it using the `width` and `height` variables you created earlier.
+1. The image may be too big or small for your monitor, so the next step is to scale it using the `width` and `height` variables you created earlier.
 
 	```python
 	difference = pygame.transform.scale(difference, (width, height))
 	```
 	
-1. These lines have just loaded the image into the Raspberry Pi memory. To display them on the screen you need to *blit* the image onto the window, and then update the display, to show it.
+1. These lines have just loaded the image into the Raspberry Pi's memory. To display them on the screen, you need to 'blit the image onto the window, and then update the display to show it.
 
     ``` python
     screen.blit(difference, (0, 0))
     pygame.display.update()
     ```
 	
-    This line blits the image to the coordinates `x = 0` and `y = 0`. That is, the top left corner of the image is being place in the top left corner of the window.
+    This line blits the image to the coordinates `x = 0` and `y = 0`; that is, the top-left corner of the image is being placed in the top-left corner of the window.
 
 1. Save and run the file again to see the image displayed.
 
-1. You might find that the image does not display for long enough for you to see it, so you can add a small `sleep` to the end of the program, just before pygame quits.
+1. You might find that the image doesn't display for long enough for you to see it, so you can add a small `sleep` to the end of the program, just before Pygame quits.
 
 	```python
 	screen.blit(difference, (0,0))
@@ -85,9 +87,11 @@ While the player is busily trying to figure out the difference between two image
 	pygame.quit()
 	```
 
-## Switching images.
+## Switching images
+
 1. To switch the image to the scary one, you need to add a pause and then re-blit another image.
-1. First, you load the **scary** image into memory and scale it in the same way you did before with the `difference` image.
+
+1. First, you load the scary image into memory and scale it in the same way you did before with the `difference` image.
 
 	```python
 	zombie = pygame.image.load('Scary_Face.png')
@@ -99,7 +103,8 @@ While the player is busily trying to figure out the difference between two image
 	```python
 	sleep(3)
 	```
-1. Then you can *blit* the image to the display and update the display.
+	
+1. Then you can blit the image to the display, and update the display.
 
     ``` python
 	screen.blit(zombie, (0,0))
@@ -116,7 +121,7 @@ While the player is busily trying to figure out the difference between two image
 	
 ## Adding some sound
 
-1. Now its time to add the scream, to make the game a little scarier. In Python, just like you did with the images, the sound needs to be loaded up first. You want to do this **before** the second image is displayed. Change your code so it looks like this:
+1. Now it's time to add the scream, to make the game a little scarier. In Python, just like you did with the images, the sound needs to be loaded first. You want to do this **before** the second image is displayed. Change your code so it looks like this:
 
     ``` python
 	zombie = pygame.transform.scale(zombie, (width, height))
@@ -126,22 +131,22 @@ While the player is busily trying to figure out the difference between two image
 	sleep(randrange(5,15))
     ```
 
-1. Then, you want to start playing the sound, just before the second image is shown, as soon as the sleep has finished.
+1. Then, you want to start playing the sound just before the second image is shown, as soon as the sleep has finished.
 
     ``` python
     scream.play()
     ```
 
-1. Then stop the scream just before pygame quits.
+1. Next, stop the scream just before Pygame quits:
 
     ``` python
     scream.stop()
     pygame.quit()
     ```
 
-1. You might find, that depending on your Raspberry Pi model, the scream takes a little time to start playing. You could therefore, add a little sleep just after the `scream.play()` line.
+1. You might find that, depending on your Raspberry Pi model, the scream takes a little time to start playing. You could, therefore, add a little sleep just after the `scream.play()` line.
 
-1. Your complete code should look like this:
+Your complete code should look like this:
 
 	```python
 	import pygame
@@ -180,7 +185,9 @@ While the player is busily trying to figure out the difference between two image
 	```
 	
 ## Pranking your friends
-1. Now all you need to do is have a friend come and try out your *Spot the difference* game. Tell them they have a minute to find as many differences as they can, and then watch them jump out of their skins when the scary image appears.
+
+1. Now all you need to do is have a friend come and try out your Spot the Difference game. Tell them they have a minute to find as many differences as they can, and then watch them jump out of their skins when the scary image appears!
 
 ## What next?
-1. Maybe you could make the game a little more realistic. Have a look at the [Pygame website](http://www.pygame.org/docs/tut/newbieguide.html) and see if you can learn how to capture mouse clicks. Maybe the game could keep a fake score of differences spotted, before the scary face jumps out.
+
+Maybe you could make the game a little more realistic. Have a look at the [Pygame website](http://www.pygame.org/docs/tut/newbieguide.html) and see if you can learn how to capture mouse clicks. Maybe the game could keep a fake score of differences spotted, before the scary face jumps out.
