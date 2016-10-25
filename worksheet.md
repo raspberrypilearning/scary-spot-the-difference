@@ -148,8 +148,7 @@ In this resource you will make a Spot the Difference game with a difference! Whi
 
 Your complete code should look like this:
 
-    ```python
-	
+```	
     import pygame
     from pygame.locals import*
     from time import sleep
@@ -184,7 +183,7 @@ Your complete code should look like this:
     scream.stop()
     pygame.quit()
 	
-    ```
+```
 	
 ## Pranking your friends
 
