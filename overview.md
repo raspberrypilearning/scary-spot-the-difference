@@ -1,1 +1,1 @@
-In this resource you're going to make a spot the difference game with a big surprise. While the player is busily searching for all the differences in an image, all of a sudden a scary image will appear along with a blood curdling scream.
+In this resource you're going to make a Spot the Difference game with a big surprise. While the player is busily searching for all the differences in an image, all of a sudden a scary image will appear, along with a blood-curdling scream!
