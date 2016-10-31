@@ -57,7 +57,7 @@ In this resource you will make a Spot the Difference game with a difference! Whi
 1. To display an image in Pygame, you first need to load the image. You can start with the Spot the Difference image. Place this line above the `pygame.quit()` line. If you've used a different image, don't forget to change the name.
 
 	``` python
-	difference = pygame.image.load('spot_the_difference.jpg')
+	difference = pygame.image.load('spot_the_difference.png')
 	```
 
 1. The image may be too big or small for your monitor, so the next step is to scale it using the `width` and `height` variables you created earlier.
