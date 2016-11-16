@@ -6,7 +6,7 @@ In this resource you will make a Spot the Difference game with a difference! Whi
 
 1. You're going to need two images and a sound file for this activity. Firstly, you'll need a Spot the Difference image. This one is free to use, but you can make or find your own if you prefer. 
 
-If you would like to use this image, right click on the image and save it onto your computer.
+	If you would like to use this image, right click on the image and save it onto your computer.
 
 	![Spot the difference](images/spot_the_diff.png)
 
@@ -21,6 +21,7 @@ If you would like to use this image, right click on the image and save it onto y
 1. [Open up a new project](http://jumpto.cc/scratch-new) in Scratch
 
 2. Delete the cat sprite by right clicking on it, and then clicking 'delete'
+	
 	![Delete Scratch cat](images/delete-cat.png)
 
 3. Now click on the 'Backdrops' tab, and then click on the folder icon to upload a backdrop from file
@@ -30,15 +31,15 @@ If you would like to use this image, right click on the image and save it onto y
 
 5. If your scary picture doesn't fill up the whole stage, use the select tool to draw a box around it and then use the handles on the box to make it larger
 
-![Backdrop should fit screen](images/fit-screen.png)
+	![Backdrop should fit screen](images/fit-screen.png)
 
-6. Repeat steps 4 and 5 for your spot the difference picture
+6. Repeat steps 4 and 5 to add your spot the difference picture as well
 
 ## Instructions for the player
 
 1. You want your player to be fooled into thinking this is a real spot the difference game, so let's give them some instructions! Click on the blank backdrop (backdrop1) to select it, and click on the text tool.
 
-![Backdrop should fit screen](images/fit-screen.png)
+![Backdrop should fit screen](images/backdrop-1.png)
 
 2. With the text tool selected, click on the blank backdrop where you would like to write your fake "spot the difference" instructions - tee hee!
 
