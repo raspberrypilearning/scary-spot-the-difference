@@ -2,9 +2,6 @@
 
 In this resource you will make a Spot the Difference game with a difference! While the player is focused intently on the screen trying to figure out the difference between two images, they'll have no idea they're about to receive the fright of their lives.
 
-<iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/131135620/?autostart=false" frameborder="0" allowfullscreen></iframe>
-
-
 ## Gathering the assets
 
 1. You're going to need two images and a sound file for this activity. Firstly, you'll need a Spot the Difference image. This one is free to use, but you can make or find your own if you prefer. 
@@ -17,7 +14,7 @@ In this resource you will make a Spot the Difference game with a difference! Whi
 
 	![Scary face](images/scary_face.png)
 
-3. Lastly, you'll need a scary sound to really give them a fright. You could use a sound from the Scratch library, you could download [this scream sound](http://soundbible.com/1627-Female-Scream-Horror.html), or perhaps if you have a microphone you could record your own scary sound! 
+3. Lastly, you'll need a scary sound to really give them a fright. You could use a sound from the Scratch library, or perhaps if you have a microphone you could record your own scary sound! 
 
 ## Setting up your Scratch project
 
@@ -44,7 +41,7 @@ In this resource you will make a Spot the Difference game with a difference! Whi
 
 	![Backdrop should fit screen](images/backdrop-1.png)
 
-2. With the text tool selected, click on the blank backdrop where you would like to write your fake "spot the difference" instructions - tee hee!
+2. With the text tool selected, click on the blank backdrop and write your fake "spot the difference" instructions - tee hee! Don't forget to also draw a button for them to click to start the game.
 
 	![Fake instructions](images/fake-instructions.png)
 
@@ -53,21 +50,37 @@ In this resource you will make a Spot the Difference game with a difference! Whi
 	![Name your backdrop](images/name-instructions.png)
 
 
-## Adding the code
+## Making the scary picture pop up
 
 Now it's time to add the code to make your prank work!
 
-1. When the program starts, you want the fake instructions page to display
+1. When the program starts, you want the fake instructions page to display. The purple *Looks* blocks can be used to control which backdrop is showing
 
 	![Display instructions](images/start-instructions.png)
 
-2. When the player clicks on the screen, the game should start 
+2. When the player clicks on the screen to start the game, the spot the difference picture should appear. Give them some time to look for the differences, then switch to the scary picture backdrop to give them a fright! Can you work out how to finish off the code below to make this work?
 
 	![When clicked start game](images/when-clicked.png)
 
-3. Test your game by clicking on the green flag
+3. Test your game by clicking on the green flag to see if it works.
 
+
+## Adding sound
+
+To make them jump right off their chair, let's make a spooky sound play when the scary picture comes up. If you have a microphone you could click on the microphone picture instead to record your own terrifying sound. If not, there are lots of good sounds already available from within Scratch. 
+
+1. Click on the 'Sounds' tab and then click on the picture of a speaker to use a sound from Scratch
+
+	![Choose sound](images/choose-sound.png)
+
+2. Choose your sound. You can find people screaming and evil laughs in the `Human` section, or perhaps you might want a howling wolf or a yowling cat from the `Animal` section? Click on the sound of your choice and then click OK.
+
+3. Now go back to the 'Scripts' tab and add a play sound block to play your sound straight after the scary picture appears 
+
+	![Add sound](images/add-sound.png)
 
 ## What next?
 
-Maybe you could make the game a little more realistic. Maybe the game could keep a fake score of differences spotted, before the scary face jumps out. Perhaps you could add a timer so your friend concentrates really hard trying to spot the differences before the time runs out?
+* Make the length of time between the game starting and the scary picture appearing a random number
+* Can you keep a fake score of differences spotted before the scary face jumps out
+* Perhaps you could add a timer so your friend concentrates really hard trying to spot the differences before the time runs out?
