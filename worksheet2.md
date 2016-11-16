@@ -2,6 +2,9 @@
 
 In this resource you will make a Spot the Difference game with a difference! While the player is focused intently on the screen trying to figure out the difference between two images, they'll have no idea they're about to receive the fright of their lives.
 
+<iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/131135620/?autostart=false" frameborder="0" allowfullscreen></iframe>
+
+
 ## Gathering the assets
 
 1. You're going to need two images and a sound file for this activity. Firstly, you'll need a Spot the Difference image. This one is free to use, but you can make or find your own if you prefer. 
@@ -27,29 +30,43 @@ In this resource you will make a Spot the Difference game with a difference! Whi
 3. Now click on the 'Backdrops' tab, and then click on the folder icon to upload a backdrop from file
 	![Backdrops](images/backdrops.png)
 
-4. Select your scary face picture and click "Open"
+4. Select your scary picture and click "Open"
 
 5. If your scary picture doesn't fill up the whole stage, use the select tool to draw a box around it and then use the handles on the box to make it larger
 
 	![Backdrop should fit screen](images/fit-screen.png)
 
-6. Repeat steps 4 and 5 to add your spot the difference picture as well
+6. Repeat steps 4 and 5 to add your spot the difference picture as a backdrop as well
 
-## Instructions for the player
+## Setting the scene
 
 1. You want your player to be fooled into thinking this is a real spot the difference game, so let's give them some instructions! Click on the blank backdrop (backdrop1) to select it, and click on the text tool.
 
-![Backdrop should fit screen](images/backdrop-1.png)
+	![Backdrop should fit screen](images/backdrop-1.png)
 
 2. With the text tool selected, click on the blank backdrop where you would like to write your fake "spot the difference" instructions - tee hee!
 
-![Fake instructions](images/fake-instructions.png)
+	![Fake instructions](images/fake-instructions.png)
 
-5. Draw backdrop one - instructions and button
+3. Name this backdrop "instructions" so that you can find it easily when you write your program
 
-6. Program button so that when they click it displays spot the diff and then waits x seconds (rand?)
+	![Name your backdrop](images/name-instructions.png)
 
-7. Then scary face appears
+
+## Adding the code
+
+Now it's time to add the code to make your prank work!
+
+1. When the program starts, you want the fake instructions page to display
+
+	![Display instructions](images/start-instructions.png)
+
+2. When the player clicks on the screen, the game should start 
+
+	![When clicked start game](images/when-clicked.png)
+
+3. Test your game by clicking on the green flag
+
 
 ## What next?
 
