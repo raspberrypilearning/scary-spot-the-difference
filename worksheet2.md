@@ -55,7 +55,7 @@ In this resource you will make a Spot the Difference game with a difference! Whi
 
 Now it's time to add the code to make your prank work!
 
-1. When the program starts, you want the page with the fake instructions to display. The purple blocks can be used to control which backdrop is showing.
+1. When the program starts, you want the page with the fake instructions to display. The `switch backdrop` block from the Looks tab can be used to control which backdrop is showing.
 
 	![Display instructions](images/start-instructions.png)
 
@@ -76,9 +76,9 @@ To make your victim jump right off their chair, let's make a spooky sound play w
 
 	![Choose sound](images/choose-sound.png)
 
-2. Choose your sound. You can find people screaming and evil laughs in the `Human` section, or perhaps you might want a howling wolf or a yowling cat from the `Animal` section? Click on the sound of your choice and then click OK.
+2. Choose your sound. You can find people screaming and evil laughs in the "Human" section, or perhaps you might want a howling wolf or a yowling cat from the "Animal" section? Click on the sound of your choice and then click OK.
 
-3. Now go back to the Scripts tab and add a `play sound` block to play your sound straight after the scary picture appears. 
+3. Now go back to the Scripts tab and add a `play sound` block to play your sound immediately after the scary picture appears. 
 
 	![Add sound](images/add-sound.png)
 
