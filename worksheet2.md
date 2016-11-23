@@ -46,7 +46,7 @@ In this resource you will make a Spot the Difference game with a difference! Whi
 
 	![Fake instructions](images/fake-instructions.png)
 
-3. Name this backdrop "instructions" so that you can find it easily when you write your program.
+3. Name this backdrop "Instructions" so that you can find it easily when you write your program.
 
 	![Name your backdrop](images/name-instructions.png)
 
