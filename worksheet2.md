@@ -6,7 +6,7 @@ In this resource you will make a Spot the Difference game with a difference! Whi
 
 1. You're going to need two images and a sound file for this activity. Firstly, you'll need a Spot the Difference image. This one is free to use, but you can make or find your own if you prefer. 
 
-	If you would like to use this image, right click on the image and save it onto your computer.
+	If you would like to use this image, right click on the it and save it onto your computer.
 
 	![Spot the difference](images/spot_the_diff.png)
 
