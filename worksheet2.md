@@ -25,6 +25,7 @@ In this resource you will make a Spot the Difference game with a difference! Whi
 	![Delete Scratch cat](images/delete-cat.png)
 
 3. Now click on the 'Backdrops' tab, and then click on the folder icon to upload a backdrop from file.
+
 	![Backdrops](images/backdrops.png)
 
 4. Select your scary picture and click "Open".
@@ -41,11 +42,11 @@ In this resource you will make a Spot the Difference game with a difference! Whi
 
 	![Backdrop should fit screen](images/backdrop-1.png)
 
-2. With the text tool selected, click on the blank backdrop and write your fake "spot the difference" instructions - tee hee! You can choose what to say, and don't forget to also draw a button for them to click to start the game.
+2. With the text tool selected, click on the blank backdrop and write your fake game instructions. You can choose what to say, and don't forget to also draw a button for the player to click to start the game.
 
 	![Fake instructions](images/fake-instructions.png)
 
-3. Name this backdrop "instructions" so that you can find it easily when you write your program
+3. Name this backdrop "instructions" so that you can find it easily when you write your program.
 
 	![Name your backdrop](images/name-instructions.png)
 
@@ -54,7 +55,7 @@ In this resource you will make a Spot the Difference game with a difference! Whi
 
 Now it's time to add the code to make your prank work!
 
-1. When the program starts, you want the fake instructions page to display. The purple blocks can be used to control which backdrop is showing
+1. When the program starts, you want the page with the fake instructions to display. The purple blocks can be used to control which backdrop is showing.
 
 	![Display instructions](images/start-instructions.png)
 
@@ -69,15 +70,15 @@ Now it's time to add the code to make your prank work!
 
 ## Adding sound
 
-To make them jump right off their chair, let's make a spooky sound play when the scary picture comes up. If you have a microphone you could record your own terrifying sound. If not, there are lots of good sounds already available from within Scratch. 
+To make your victim jump right off their chair, let's make a spooky sound play when the scary picture comes up. If you have a microphone you could record your own terrifying sound. If not, there are lots of good sounds already available from within Scratch. 
 
-1. Click on the 'Sounds' tab and then click on the picture of a speaker to use a sound from Scratch
+1. Click on the 'Sounds' tab and then click on the picture of a speaker to use a sound from Scratch.
 
 	![Choose sound](images/choose-sound.png)
 
 2. Choose your sound. You can find people screaming and evil laughs in the `Human` section, or perhaps you might want a howling wolf or a yowling cat from the `Animal` section? Click on the sound of your choice and then click OK.
 
-3. Now go back to the 'Scripts' tab and add a play sound block to play your sound straight after the scary picture appears 
+3. Now go back to the 'Scripts' tab and add a `play sound` block to play your sound straight after the scary picture appears. 
 
 	![Add sound](images/add-sound.png)
 
