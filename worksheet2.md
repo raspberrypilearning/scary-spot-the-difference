@@ -10,7 +10,7 @@ In this resource you will make a Spot the Difference game with a difference! Whi
 
 	![Spot the difference](images/spot_the_diff.png)
 
-2. Next, you'll need the image you're going to swap out to give them a fright. This zombie face is cool, but you can make or find your own if you like. Just remember the age of the people you're trying to scare and choose something appropriate.
+2. Next, you'll need the image you're going to swap with the game image to give the player a fright. This zombie face is cool, but you can make or find your own if you like. Just remember the age of the people you're trying to scare and choose something appropriate.
 
 	![Scary face](images/scary_face.png)
 
