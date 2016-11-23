@@ -20,7 +20,7 @@ In this resource you will make a Spot the Difference game with a difference! Whi
 
 1. [Open up a new project](http://jumpto.cc/scratch-new) in Scratch.
 
-2. Delete the cat sprite by right clicking on it, and then clicking 'delete'.
+2. Delete the cat sprite by right-clicking on it, and then clicking 'delete'.
 	
 	![Delete Scratch cat](images/delete-cat.png)
 
