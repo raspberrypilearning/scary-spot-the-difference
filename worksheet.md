@@ -1,6 +1,6 @@
 # Scary Spot the Difference
 
-In this resource you will make a Spot the Difference game with a difference! While the player is focused intently on the screen trying to figure out the difference between two images, they'll have no idea they're about to receive the fright of their lives.
+In this resource you will make a Spot the Difference game with a difference! While the player is focused intently on the screen trying to figure out the difference between two images, they'll have no idea they're about to receive the fright of their life.
 
 ## Gathering the assets
 
@@ -191,4 +191,5 @@ pygame.quit()
 
 ## What next?
 
-Maybe you could make the game a little more realistic. Have a look at the [Pygame website](http://www.pygame.org/docs/tut/newbieguide.html) and see if you can learn how to capture mouse clicks. Maybe the game could keep a fake score of differences spotted, before the scary face jumps out.
+- Could you make the game more realistic? Have a look at the [Pygame website](http://www.pygame.org/docs/tut/newbieguide.html) and see if you can learn how to capture mouse clicks from your victim. 
+- Could you make the game could keep a fake score of differences spotted before the scary face jumps out?
