@@ -55,7 +55,7 @@ In this resource you will make a Spot the Difference game with a difference! Whi
 
 Now it's time to add the code to make your prank work!
 
-1. When the program starts, you want the page with the fake instructions to display. The `switch backdrop` block from the **Looks** tab can be used to control which backdrop is showing.
+1. When the program starts, you want the page with the fake instructions to display. Click on the **Scripts** tab to add your code. The `switch backdrop` block from **Looks** can be used to control which backdrop is showing.
 
 	![Display instructions](images/start-instructions.png)
 
