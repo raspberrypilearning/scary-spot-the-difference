@@ -1,4 +1,4 @@
-# Scary Spot the Difference
+# Scary Spot the Difference - Python
 
 In this resource you will make a Spot the Difference game with a difference! While the player is focused intently on the screen trying to figure out the difference between two images, they'll have no idea they're about to receive the fright of their life.
 
