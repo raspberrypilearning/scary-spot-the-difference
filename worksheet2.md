@@ -22,11 +22,11 @@ If you would like to make this project using Python instead of Scratch, head on 
 
 1. [Open up a new project](http://jumpto.cc/scratch-new) in Scratch.
 
-2. Delete the cat sprite by right-clicking on it, and then clicking **delete**.
+2. Delete the cat sprite by right-clicking on it, and then clicking Delete.
 	
 	![Delete Scratch cat](images/delete-cat.png)
 
-3. Now click on the **Backdrops** tab, and then click on the folder icon to upload a backdrop from file.
+3. Now click on the Backdrops tab, and then click on the folder icon to upload a backdrop from file.
 
 	![Backdrops](images/backdrops.png)
 
@@ -57,7 +57,7 @@ If you would like to make this project using Python instead of Scratch, head on 
 
 Now it's time to add the code to make your prank work!
 
-1. When the program starts, you want the page with the fake instructions to display. Click on the **Scripts** tab to add your code. The `switch backdrop` block from **Looks** can be used to control which backdrop is showing.
+1. When the program starts, you want the page with the fake instructions to display. Click on the Scripts tab to add your code. The `switch backdrop` block from Looks can be used to control which backdrop is showing.
 
 	![Display instructions](images/start-instructions.png)
 
@@ -74,13 +74,13 @@ Now it's time to add the code to make your prank work!
 
 To make your victim jump right off their chair, let's make a spooky sound play when the scary picture comes up. If you have a microphone you could record your own terrifying sound. If not, there are lots of good sounds already available from within Scratch. 
 
-1. Click on the **Sounds** tab and then click on the speaker icon to use a sound from Scratch.
+1. Click on the Sounds tab and then click on the speaker icon to use a sound from Scratch.
 
 	![Choose sound](images/choose-sound.png)
 
 2. Choose your sound. You can find people screaming and evil laughs in the "Human" section, or perhaps you might want a howling wolf or a yowling cat from the "Animal" section? Click on the sound of your choice and then click OK.
 
-3. Now go back to the **Scripts** tab and add a `play sound` block to play your sound immediately after the scary picture appears. 
+3. Now go back to the Scripts tab and add a `play sound` block to play your sound immediately after the scary picture appears. 
 
 	![Add sound](images/add-sound.png)
 
