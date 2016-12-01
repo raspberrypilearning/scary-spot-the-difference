@@ -2,6 +2,8 @@
 
 In this resource you will make a Spot the Difference game with a difference! While the player is focused intently on the screen trying to figure out the difference between two very similar pictures, they'll have no idea they're about to receive the fright of their life.
 
+If you would like to make this project using Python instead of Scratch, head on over to the [Python worksheet](worksheet.md).
+
 ## Gathering the assets
 
 1. You're going to need two images and a sound file for this activity. Firstly, you'll need a Spot the Difference image. This one is free to use, but you can make or find your own if you prefer. 
