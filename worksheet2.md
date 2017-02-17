@@ -6,7 +6,7 @@ If you would like to make this project using Python instead of Scratch, head on 
 
 ## Gathering the assets
 
-1. You're going to need two images and a sound file for this activity. Firstly, you'll need a Spot the Difference image. This one is free to use, but you can make or find your own if you prefer. 
+1. You're going to need two images and a sound file for this activity. Firstly, you'll need a Spot the Difference image. This one is free to use, but you can make or find your own if you prefer.
 
 	If you would like to use this image, right-click on it and save it onto your computer.
 
@@ -14,16 +14,16 @@ If you would like to make this project using Python instead of Scratch, head on 
 
 2. Next, you'll need the image you're going to swap with the game image to give the player a fright. This zombie face is cool, but you can make or find your own if you like. Just remember the age of the people you're trying to scare and choose something appropriate.
 
-	![Scary face](images/scary_face.png)
+	![Scary face](images/scary_face_43.png)
 
-3. Lastly, you'll need a scary sound to really give them a shock. You could use a sound from the Scratch library, or perhaps if you have a microphone you could record your own scary sound. Muhahahaha! 
+3. Lastly, you'll need a scary sound to really give them a shock. You could download [this one](http://soundbible.com/1627-Female-Scream-Horror.html). Alternatively, you could use a sound from the Scratch library, or perhaps if you have a microphone you could record your own scary sound. Muhahahaha!
 
 ## Setting up your Scratch project
 
 1. [Open up a new project](http://jumpto.cc/scratch-new) in Scratch.
 
 2. Delete the cat sprite by right-clicking on it, and then clicking Delete.
-	
+
 	![Delete Scratch cat](images/delete-cat.png)
 
 3. Now click on the Backdrops tab, and then click on the folder icon to upload a backdrop from file.
@@ -61,7 +61,7 @@ Now it's time to add the code to make your prank work!
 
 	![Display instructions](images/start-instructions.png)
 
-2. When the player clicks on the screen to start the game, the Spot the Difference picture should appear. Give them some time to look for the differences, then switch to the scary picture backdrop to give them a fright! 
+2. When the player clicks on the screen to start the game, the Spot the Difference picture should appear. Give them some time to look for the differences, then switch to the scary picture backdrop to give them a fright!
 
 	Can you work out how to finish off the code below to make this work?
 
@@ -72,7 +72,7 @@ Now it's time to add the code to make your prank work!
 
 ## Adding sound
 
-To make your victim jump right off their chair, let's make a spooky sound play when the scary picture comes up. If you have a microphone you could record your own terrifying sound. If not, there are lots of good sounds already available from within Scratch. 
+To make your victim jump right off their chair, let's make a spooky sound play when the scary picture comes up. If you have a microphone you could record your own terrifying sound. If not, there are lots of good sounds already available from within Scratch.
 
 1. Click on the Sounds tab and then click on the speaker icon to use a sound from Scratch.
 
@@ -80,7 +80,7 @@ To make your victim jump right off their chair, let's make a spooky sound play w
 
 2. Choose your sound. You can find people screaming and evil laughs in the "Human" section, or perhaps you might want a howling wolf or a yowling cat from the "Animal" section? Click on the sound of your choice and then click OK.
 
-3. Now go back to the Scripts tab and add a `play sound` block to play your sound immediately after the scary picture appears. 
+3. Now go back to the Scripts tab and add a `play sound` block to play your sound immediately after the scary picture appears.
 
 	![Add sound](images/add-sound.png)
 
