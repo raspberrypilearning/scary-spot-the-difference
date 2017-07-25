@@ -1,0 +1,33 @@
+---
+title: Scary Spot the Difference
+hero_image: images/banner.png
+description: Make a scary spot the difference game in Python
+original_url: https://raspberrypi.org/learning/scary-spot-the-difference
+theme: red
+duration: 2
+listed: false
+ingredient: false
+copyedit: true
+curriculum: creator, design-0, programming-0, phys-comp-0, manufacture-0, community-0
+interests: ''
+technologies: rpi, physical computing, python
+site_areas: ''
+steps:
+- title: Introduction
+- title: What you will need
+- title: Scary Spot the Difference - Python
+- title: Gathering the assets
+- title: Setting up your file
+- title: Displaying an image
+- title: Switching images
+- title: Adding some sound
+- title: Pranking your friends
+- title: What next?
+- title: Scary Spot the Difference - Scratch
+- title: Gathering the assets
+- title: Setting up your Scratch project
+- title: Setting the scene
+- title: Making the scary picture appear
+- title: Adding sound
+- title: What next?
+
