@@ -2,14 +2,14 @@ title: Scary Spot the Difference
 hero_image: images/banner.png
 description: Make a scary spot the difference game in Python
 original_url: https://raspberrypi.org/learning/scary-spot-the-difference
-theme: red
+theme: green
 duration: 2
 listed: true
 ingredient: false
 copyedit: true
 curriculum: creator, design-0, programming-0, phys-comp-0, manufacture-0, community-0
 interests: ''
-technologies: rpi, physical computing, python
+technologies: python
 site_areas: ''
 steps:
 - title: Introduction

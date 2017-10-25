@@ -12,7 +12,7 @@
 	difference = pygame.transform.scale(difference, (width, height))
 	```
 	
-- These lines have just loaded the image into the Raspberry Pi's memory. To display them on the screen, you need to 'blit the image onto the window, and then update the display to show it.
+- These lines have just loaded the image into the Raspberry Pi's memory. To display them on the screen, you need to `blit` the image onto the window, and then update the display to show it.
 
     ``` python
     screen.blit(difference, (0, 0))
