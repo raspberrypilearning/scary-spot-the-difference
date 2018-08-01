@@ -8,7 +8,7 @@
 
 	![image](images/scary_face.png)
 
-- Lastly, you'll need a scary sound to really give them a fright. You can download [this one](images/scream.wav) by right clicking on the link.
+- Lastly, you'll need a scary sound to really give them a fright. You can download one at [rpf.io/scream](rpf.io/scream).
 
 - Save all the files in a single directory, where your Python script will be.
 
