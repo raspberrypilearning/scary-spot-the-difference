@@ -5,7 +5,7 @@
 - First, you load the scary image into memory and scale it in the same way you did before with the `difference` image.
 
 	```python
-	zombie = pygame.image.load('Scary_Face.png')
+	zombie = pygame.image.load('scary_face.png')
 	zombie = pygame.transform.scale(zombie, (width, height))
 	```
 	
