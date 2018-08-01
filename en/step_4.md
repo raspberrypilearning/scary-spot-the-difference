@@ -8,7 +8,7 @@
 
 	![image](images/scary_face.png)
 
-- Lastly, you'll need a scary sound to really give them a fright. You can download [this one](http://soundbible.com/1627-Female-Scream-Horror.html), which should do the trick. Make sure you download the `wav` version of the file, or again find your own. Once you have the file, rename it to `scream.wav`.
+- Lastly, you'll need a scary sound to really give them a fright. You can download one at [rpf.io/scream](http://rpf.io/scream).
 
 - Save all the files in a single directory, where your Python script will be.
 

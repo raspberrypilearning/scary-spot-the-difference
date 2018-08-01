@@ -22,10 +22,10 @@
 	height = pygame.display.Info().current_h
 	```
     
-- Lastly for this section, you can instruct Pygame to create a full-screen window for the game to be played in, and then get Pygame to quit.
+- Lastly for this section, you can instruct Pygame to create a large window for the game to be played in, and then get Pygame to quit.
 
     ``` python
-	screen = pygame.display.set_mode((width, height), FULLSCREEN)
+	screen = pygame.display.set_mode((width, height))
 	
 	pygame.quit()
     ```
