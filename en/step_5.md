@@ -1,36 +1,32 @@
-## Setting up your file
+## Switching images
 
-- Open IDLE by clicking on Menu> Programming > Python 3 (IDLE), then click File and New File.
+- To switch the image to the scary one, you need to add a pause and then re-blit another image.
 
-- Save your file straight away, in the same directory as your images. If you call it `run_me.py`, you won't be giving the game away to your victim.
+- First, you load the scary image into memory and scale it in the same way you did before with the `difference` image.
 
-- To begin with, you'll need to import the Pygame library and some of its modules. You're also going to need the `sleep` and `randrange` functions.
-
-    ``` python
-    import pygame
-    from pygame.locals import*
-	from time import sleep
-	from random import randrange
-    ```
-	
-- Next, you need to initialise Pygame so that it's ready to be used. As different monitors have different sizes, you need to find out the width and height of your monitor, and save them as variables.
-
-    ``` python
-	pygame.init()
-
-	width = pygame.display.Info().current_w
-	height = pygame.display.Info().current_h
+	```python
+	zombie = pygame.image.load('scary_face.png')
+	zombie = pygame.transform.scale(zombie, (width, height))
 	```
-    
-- Lastly for this section, you can instruct Pygame to create a large window for the game to be played in, and then get Pygame to quit.
+	
+- Then get your program to pause for a few seconds.
+
+	```python
+	sleep(3)
+	```
+	
+- Then you can blit the image to the display, and update the display.
 
     ``` python
-	screen = pygame.display.set_mode((width, height))
-	
-	pygame.quit()
+	screen.blit(zombie, (0,0))
+	pygame.display.update()
     ```
 
-- Save your file again and then run it by pressing `F5`.
+- Save and run the program again, to see the new image being placed.
 
-- You should see a blank rectangular window open. This is the Pygame window. It should close itself straight away, as your program reaches the `pygame.quit()` line.
+- It's a little predictable at the moment, so you can add some randomness by changing the `sleep` time between the two images to a random number.
 
+	```python
+	sleep(randrange(5,15))
+	```
+	

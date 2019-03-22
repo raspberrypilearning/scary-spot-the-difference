@@ -23,8 +23,8 @@ title: What you will need
 - A computer capable of running Python
 
 ### Software
-- Python 3
-- Pygame
+- [Python 3](https://www.python.org/downloads/)
+- [Pygame](https://www.pygame.org/wiki/GettingStarted)
 
 ### Downloads
 

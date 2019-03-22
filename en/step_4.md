@@ -1,14 +1,35 @@
-## Gathering the assets
+## Displaying an image
 
-- You're going to need two images and a sound file for this activity. Firstly, you'll need a Spot the Difference image. This one is free to use, but you can make or find your own if you prefer.
+- To display an image in Pygame, you first need to load the image. You can start with the Spot the Difference image. Place this line above the `pygame.quit()` line. If you've used a different image, don't forget to change the name.
 
-   ![image](images/spot_the_diff.png)
+	``` python
+	difference = pygame.image.load('spot_the_diff.png')
+	```
 
-- Next, you'll need the image you're going to swap out to give them a fright. This zombie face is cool, but you can make or find your own if you like. Just remember the age of the people you're trying to scare and choose something appropriate.
+- The image may be too big or small for your monitor, so the next step is to scale it using the `width` and `height` variables you created earlier.
 
-	![image](images/scary_face.png)
+	```python
+	difference = pygame.transform.scale(difference, (width, height))
+	```
+	
+- These lines have just loaded the image into the Raspberry Pi's memory. To display them on the screen, you need to `blit` the image onto the window, and then update the display to show it.
 
-- Lastly, you'll need a scary sound to really give them a fright. You can download one at [rpf.io/scream](http://rpf.io/scream).
+    ``` python
+    screen.blit(difference, (0, 0))
+    pygame.display.update()
+    ```
+	
+    This line blits the image to the coordinates `x = 0` and `y = 0`; that is, the top-left corner of the image is being placed in the top-left corner of the window.
 
-- Save all the files in a single directory, where your Python script will be.
+- Save and run the file again to see the image displayed.
+
+- You might find that the image doesn't display for long enough for you to see it, so you can add a small `sleep` to the end of the program, just before Pygame quits.
+
+	```python
+	screen.blit(difference, (0,0))
+	pygame.display.update()
+	
+	sleep(3)
+	pygame.quit()
+	```
 
