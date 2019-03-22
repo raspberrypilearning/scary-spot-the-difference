@@ -49,10 +49,6 @@ screen = pygame.display.set_mode((width, height))
 pygame.quit()
 --- /code ---
 
-
-    ``` python
-
-    ```
 --- /task ---
 
 --- task ---

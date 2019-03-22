@@ -14,8 +14,6 @@ Download and unzip the resources [here](http://rpf.io/p/en/scary-spot-the-differ
 Your browser does not support the<code>audio</code> element.
 </audio>
 
-[rpf.io/scream](http://rpf.io/scream).
-
 --- task ---
 Either open the `scary_spot_the_difference.py` file from the resources, in the editor of your choice ([we recommend using Mu](https://projects.raspberrypi.org/en/projects/getting-started-with-mu)), or copy and paste the code below into a new file.
 
