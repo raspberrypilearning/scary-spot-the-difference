@@ -28,7 +28,7 @@ title: What you will need
 
 ### Downloads
 
-The starter project and resources can be found [here](http://rpf.io/p/en/scary-spot-the-difference-off){:target="_blank"}.
+The starter project and resources can be found [here](http://rpf.io/p/en/scary-spot-the-difference-go){:target="_blank"}.
 --- /collapse ---
 
 --- collapse ---
