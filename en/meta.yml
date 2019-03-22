@@ -13,13 +13,16 @@ technologies: python
 site_areas: projects
 hardware: ''
 software: python
-version: 3
-last_tested: 2017-01-01
+version: 3.1.0
+last_tested: 2018-03-22
 steps: 
 - title: Introduction
 - title: Getting started
 - title: Setting up your prank
 - title: Displaying an image
 - title: Switching images
-- title: Add soudn to finish the game
+- title: Making it random
+- title: Adding some sound
+- title: "Challenge: Taking it further"
+  challenge:true
 - title: What next?

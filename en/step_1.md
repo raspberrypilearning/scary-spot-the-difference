@@ -35,10 +35,10 @@ The starter project and resources can be found [here](http://rpf.io/p/en/scary-s
 ---
 title: What you will learn
 ---
-By creating the Scary Spot the Difference project you will learn:
+By creating the Scary Spot the Difference project you will:
 
-- How to scale and display images in Python using Pygame
-- How to play sounds in Python using Pygame
+- Recall how to display images using pygame
+- Recall how to use `randrange` to pick a random number
 
 This resource covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://www.raspberrypi.org/curriculum/):
 
