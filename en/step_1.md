@@ -54,6 +54,6 @@ title: Additional information for educators
 If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/scary-spot-the-difference/print){:target="_blank"}.
 
 You can download the finished project at:
-[http://rpf.io/p/en/blockscad-bug-get](http://rpf.io/p/en/scary-spot-the-difference-get).
+[here](http://rpf.io/p/en/scary-spot-the-difference-get).
 
 --- /collapse ---
