@@ -28,7 +28,7 @@ title: What you will need
 
 ### Downloads
 
-The starter project and resources can be found [here](http://rpf.io/p/en/scratch-cat-goes-skiing-off){:target="_blank"}.
+The starter project and resources can be found [here](http://rpf.io/p/en/scary-spot-the-difference-off){:target="_blank"}.
 --- /collapse ---
 
 --- collapse ---
@@ -52,7 +52,6 @@ title: Additional information for educators
 
 If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/scary-spot-the-difference/print){:target="_blank"}.
 
-You can download the finished project at:
-[here](http://rpf.io/p/en/scary-spot-the-difference-get).
+You can download the finished project [here](http://rpf.io/p/en/scary-spot-the-difference-get).
 
 --- /collapse ---
