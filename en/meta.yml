@@ -17,10 +17,9 @@ version: 3
 last_tested: 2017-01-01
 steps: 
 - title: Introduction
-- title: Getting starterd
-- title: Setting up your file
+- title: Getting started
+- title: Setting up your prank
 - title: Displaying an image
 - title: Switching images
-- title: Adding some sound
-- title: Pranking your friends
+- title: Add soudn to finish the game
 - title: What next?

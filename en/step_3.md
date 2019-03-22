@@ -1,4 +1,4 @@
-##	Displaying an image
+##	Setting up your prank
 
 The first step will be to display the `spot-the-diff.png` image on the screen. To do this you need the computer to detect the size of your monitor, as they all have different resolutions.
 

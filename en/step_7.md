@@ -1,4 +1,8 @@
-## Pranking your friends
+## What next?
 
-- Now all you need to do is have a friend come and try out your Spot the Difference game. Tell them they have a minute to find as many differences as they can, and then watch them jump out of their skins when the scary image appears!
+Could you make the game more realistic? Have a look at the [Pygame website](http://www.pygame.org/docs/tut/newbieguide.html) and see if you can learn how to capture mouse clicks from your victim. 
+
+Could you make the game could keep a fake score of differences spotted before the scary face jumps out?
+
+If you want to have another go at some prank projects then have a look [here](https://rpf.io/pranks)
 
