@@ -5,8 +5,6 @@ It's a little predictable at the moment, so you can add some randomness by chang
 --- task ---
 Change the time between the two images being on screen to a random number.
 
-
-
 --- hints --- --- hint ---
 You have imported the `randrange` function at the top of your program. Can you use this function to select a random time?
 --- /hint --- --- hint ---
@@ -53,8 +51,6 @@ pygame.display.update()
 
 pygame.quit()
 --- /code ---
---- /task ---
-hint 3 title
 --- /hint --- --- /hints ---
-
+--- /task ---
 
