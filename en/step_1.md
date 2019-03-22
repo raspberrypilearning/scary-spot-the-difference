@@ -8,7 +8,6 @@ Play the video to see what you will make
 
 <video width="640" height="360" controls>
 <source src="images/scary-spot-the-difference.webm" type="video/webm">
-<source src="images/scary-spot-the-difference.mp4" type="video/mp4">
 </video>
 
 --- /no-print ---
