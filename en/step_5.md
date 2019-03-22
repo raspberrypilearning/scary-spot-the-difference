@@ -85,6 +85,7 @@ Save and run the program again, to see the new image being placed.
 
 --- task ---
 It's a little predictable at the moment, so you can add some randomness by changing the `sleep` time between the two images to a random number.
+
 --- code ---
 ---
 language: python
