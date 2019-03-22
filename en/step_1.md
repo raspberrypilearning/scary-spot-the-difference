@@ -10,7 +10,7 @@ Play the video to see what you will make
 <source src="images/scary-spot-the-difference.mp4" type="video/mp4">
 </video>
 
---- /no-print
+--- /no-print ---
 In this resource you're going to make a Spot the Difference game with a big surprise. While the player is busily searching for all the differences in an image, all of a sudden a scary image will appear, along with a blood-curdling scream!
 
 ## What you will learn
