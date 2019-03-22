@@ -9,9 +9,8 @@ Download and unzip the resources [here](http://rpf.io/p/en/scary-spot-the-differ
 ![image](images/spot_the_diff.png)
 ![image](images/scary_face.png)
 
-<audio>
-controls
-src="resources/scream.wav3">
+<audio controls>
+<source src="resources/scream.wav3" type="audio/wav">
 Your browser does not support the<code>audio</code> element.
 </audio>
 
