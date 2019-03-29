@@ -1,9 +1,9 @@
-## Switching images
+## Switch images
 
-To switch the image to the scary one, you need to add a pause and then re-blit another image.
+To switch the image to the scary one, you need to use `blit` again.
 
 --- task ---
-First, you load the scary image into memory and scale it in the same way you did before with the `difference` image.
+First load the scary image into memory and scale it, in the same way as the `difference` image.
 
 --- code ---
 ---
@@ -40,12 +40,12 @@ pygame.quit()
 --- /task ---
 
 --- task ---
-Now add two lines to `blit` the new image to the display, and update the display.
+Now add two new lines to prepare the window for displaying the new image, and then update the display.
 
 --- hints --- --- hint ---
-To blit an image you need to use the `screen.blit() command and give it a file name.
+You need to use the `screen.blit()` command with a file name.
 --- /hint --- --- hint ---
-Here are the lines you'll need to add
+Here are the lines of code you need to add:
 ```python
 screen.blit(zombie, (0,0))
 pygame.display.update()
@@ -93,10 +93,5 @@ pygame.quit()
 --- /task ---
 
 --- task ---
-Save and run the program again, to see the new image being placed.
---- /task ---
-
-
---- task ---
-Save and run your code again, to see if the new image appears.
+Save and run the program again to see the new image being displayed.
 --- /task ---

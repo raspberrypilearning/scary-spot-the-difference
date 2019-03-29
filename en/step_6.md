@@ -1,14 +1,14 @@
-## Making it random
+## Make it random
 
-It's a little predictable at the moment, so you can add some randomness by changing the `sleep` time between the two images to a random number.
+Your program is a little predictable at the moment. Add some randomness by randomly changing the pause between the two images being displayed.
 
 --- task ---
-Change the time between the two images being on screen to a random number.
+Change the `sleep` pause between the two images being on screen to a random number.
 
 --- hints --- --- hint ---
-You have imported the `randrange` function at the top of your program. Can you use this function to select a random time?
+The `randrange` function gets imported at the top of your program. Can you use this function to select a random number for the pause?
 --- /hint --- --- hint ---
-Here is the line you'll need to add in:
+Here is the line you need to add in:
 
 ```python
 sleep(randrange(5,15))

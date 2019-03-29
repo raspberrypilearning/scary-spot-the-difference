@@ -1,6 +1,4 @@
 ## What next?
 
-
-
-If you want to have another go at some prank projects then have a look [here](https://rpf.io/pranks)
+If you want to play more tricks on your friends, then [have a look at our collection of prank projects](https://rpf.io/pranks).
 

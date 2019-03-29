@@ -1,9 +1,9 @@
-## Adding some sound
+## Add some sound
 
-Now it's time to add the scream, to make the game a little scarier. In Python, just like you did with the images, the sound needs to be loaded first. You want to do this **before** the second image is displayed.
+Now it's time to add the scream to make the game a little scarier. In Python, just like the images, the sound needs to be loaded first before it can be used. Load the sound **before** the second image is displayed.
 
 --- task ---
-You can load the sound file and call it `scream` like this.
+Lad the sound file as a variable called `scream` like this:
 
 --- code ---
 ---
@@ -45,7 +45,7 @@ pygame.quit()
 --- /task ---
 
 --- task ---
-Then add a line to start playing the sound just before the second image is shown, and another to stop the sound just before pygame quits.
+Then add a line of code to start playing the sound just before the second image is shown, and add another line to stop the sound just before Pygame quits.
 
 --- code ---
 ---
@@ -92,5 +92,5 @@ pygame.quit()
 --- /task ---
 
 --- task ---
-Save and run your code to see if it works. Then surprise your firends by telling them you have made a spot the difference game for them to play.
+Save and run your code to see if it works. Then surprise your friends by telling them you have made a 'spot the difference' game for them to play.
 --- /task ---

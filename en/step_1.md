@@ -4,7 +4,7 @@ You are going to create a Spot the Difference game with a big surprise, to scare
 ## What you will make
 
 --- no-print ---
-Play the video to see what you will make
+Play the video to see what you will make.
 
 <video width="640" height="360" controls>
 <source src="images/scary-spot-the-difference.webm" type="video/webm">
@@ -12,7 +12,7 @@ Play the video to see what you will make
 
 --- /no-print ---
 
-While the player is busily searching for all the differences in an image, all of a sudden a scary image will appear, along with a blood-curdling scream!
+While the player is searching for all the differences in an image, suddenly a scary image will appear, and a blood-curdling scream will resound!
 
 --- collapse ---
 ---
@@ -28,17 +28,16 @@ title: What you will need
 
 ### Downloads
 
-The starter project and resources can be found [here](http://rpf.io/p/en/scary-spot-the-difference-go){:target="_blank"}.
+[Find the starter project and resources here](http://rpf.io/p/en/scary-spot-the-difference-go){:target="_blank"}.
 --- /collapse ---
 
 --- collapse ---
 ---
 title: What you will learn
 ---
-By creating the Scary Spot the Difference project you will:
 
-- Recall how to display images using pygame
-- Recall how to use `randrange` to pick a random number
+- How to display images using pygame
+- How to use `randrange` to pick a random number
 
 This resource covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://www.raspberrypi.org/curriculum/):
 
@@ -52,6 +51,6 @@ title: Additional information for educators
 
 If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/scary-spot-the-difference/print){:target="_blank"}.
 
-You can download the finished project [here](http://rpf.io/p/en/scary-spot-the-difference-get).
+You can [download the finished project here](http://rpf.io/p/en/scary-spot-the-difference-get).
 
 --- /collapse ---

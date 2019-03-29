@@ -1,5 +1,7 @@
-## Challenge: Taking it further
+## Challenge: take it further
 
-Could you make the game more realistic? Have a look at the [Pygame website](http://www.pygame.org/docs/tut/newbieguide.html) and see if you can learn how to capture mouse clicks from your victim. 
+Can you make the game more realistic?
 
-Could you make the game could keep a fake score of differences spotted before the scary face jumps out?
++ Have a look at the [Pygame website](http://www.pygame.org/docs/tut/newbieguide.html) to find out how to detect mouse clicks from your victim so they can click on differences. 
+
++ Make the game keep a fake score of differences spotted before the scary face appears.

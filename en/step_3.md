@@ -1,9 +1,9 @@
-##	Setting up your prank
+##	Set up your prank
 
-The first step will be to display the `spot-the-diff.png` image on the screen. To do this you need the computer to detect the size of your monitor, as they all have different resolutions.
+Your first step is to display the `spot-the-diff.png` image on the screen. To do this, you need the computer to detect the size of your monitor. You need to know the monitor size because different types of monitors have different resolutions, and you need to know the resolution to display the image correctly.
 
 --- task ---
-Create two new variables called `width` and `height`. You can use the `display.Infor()` methods to then find out the width and height of your monitor.
+Create two new variables called `width` and `height`. Then use the `display.Infor()` methods to find out the width and height of your monitor.
 
 --- code ---
 ---
@@ -25,7 +25,7 @@ height = pygame.display.Info().current_h
 --- /task ---
 
 --- task ---
-Now you can tell Pygame to create a large window for the game to be played in, and then get Pygame to quit.
+Now tell Pygame to create a large window in which the game can be played. Then get Pygame to quit.
 
 --- code ---
 ---
@@ -52,7 +52,8 @@ pygame.quit()
 --- /task ---
 
 --- task ---
-Save your file again and then run it, and you should see a blank rectangular window open. This is the Pygame window. It should close itself straight away, as your program reaches the `pygame.quit()` line.
+
+Save your program and then run it. You should see a blank rectangular window open. This is the Pygame window. It should close itself straight away, because your program reaches the `pygame.quit()` line.
 --- /task ---
 
 
