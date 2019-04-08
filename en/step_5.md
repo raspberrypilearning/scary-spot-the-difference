@@ -1,36 +1,97 @@
-## Setting up your file
+## Switch images
 
-- Open IDLE by clicking on Menu> Programming > Python 3 (IDLE), then click File and New File.
+To switch the image to the scary one, you need to use `blit` again.
 
-- Save your file straight away, in the same directory as your images. If you call it `run_me.py`, you won't be giving the game away to your victim.
+--- task ---
+First load the scary image into memory and scale it, in the same way as the `difference` image.
 
-- To begin with, you'll need to import the Pygame library and some of its modules. You're also going to need the `sleep` and `randrange` functions.
+--- code ---
+---
+language: python
+filename: scary_spot_the_difference.py
+line_numbers: true
+line_number_start: 
+highlight_lines: 15,16
+---
+import pygame
+from time import sleep
+from random import randrange
 
-    ``` python
-    import pygame
-    from pygame.locals import*
-	from time import sleep
-	from random import randrange
-    ```
-	
-- Next, you need to initialise Pygame so that it's ready to be used. As different monitors have different sizes, you need to find out the width and height of your monitor, and save them as variables.
+pygame.init()
 
-    ``` python
-	pygame.init()
+width = pygame.display.Info().current_w
+height = pygame.display.Info().current_h
 
-	width = pygame.display.Info().current_w
-	height = pygame.display.Info().current_h
-	```
-    
-- Lastly for this section, you can instruct Pygame to create a large window for the game to be played in, and then get Pygame to quit.
+screen = pygame.display.set_mode((width, height))
 
-    ``` python
-	screen = pygame.display.set_mode((width, height))
-	
-	pygame.quit()
-    ```
+difference = pygame.image.load('spot_the_diff.png')
+difference = pygame.transform.scale(difference, (width, height))
 
-- Save your file again and then run it by pressing `F5`.
+zombie = pygame.image.load('scary_face.png')
+zombie = pygame.transform.scale(zombie, (width, height))
 
-- You should see a blank rectangular window open. This is the Pygame window. It should close itself straight away, as your program reaches the `pygame.quit()` line.
+screen.blit(difference, (0, 0))
+pygame.display.update()
 
+sleep(3)
+
+pygame.quit()
+--- /code ---
+--- /task ---
+
+--- task ---
+Now add two new lines to prepare the window for displaying the new image, and then update the display.
+
+--- hints --- --- hint ---
+You need to use the `screen.blit()` command with a file name.
+--- /hint --- --- hint ---
+Here are the lines of code you need to add:
+```python
+screen.blit(zombie, (0,0))
+pygame.display.update()
+```
+
+--- /hint --- --- hint ---
+Here is the full code:
+
+--- code ---
+---
+language: python
+filename: scary_spot_the_difference.py
+line_numbers: true
+line_number_start: 
+highlight_lines: 23,24
+---
+import pygame
+from time import sleep
+from random import randrange
+
+pygame.init()
+
+width = pygame.display.Info().current_w
+height = pygame.display.Info().current_h
+
+screen = pygame.display.set_mode((width, height))
+
+difference = pygame.image.load('spot_the_diff.png')
+difference = pygame.transform.scale(difference, (width, height))
+
+zombie = pygame.image.load('scary_face.png')
+zombie = pygame.transform.scale(zombie, (width, height))
+
+screen.blit(difference, (0, 0))
+pygame.display.update()
+
+sleep(3)
+
+screen.blit(zombie, (0,0))
+pygame.display.update()
+
+pygame.quit()
+--- /code ---
+--- /hint --- --- /hints ---
+--- /task ---
+
+--- task ---
+Save and run the program again to see the new image being displayed.
+--- /task ---

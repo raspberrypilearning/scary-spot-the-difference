@@ -1,32 +1,96 @@
-## Switching images
+## Add some sound
 
-- To switch the image to the scary one, you need to add a pause and then re-blit another image.
+Now it's time to add the scream to make the game a little scarier. In Python, just like the images, the sound needs to be loaded first before it can be used. Load the sound **before** the second image is displayed.
 
-- First, you load the scary image into memory and scale it in the same way you did before with the `difference` image.
+--- task ---
+Lad the sound file as a variable called `scream` like this:
 
-	```python
-	zombie = pygame.image.load('scary_face.png')
-	zombie = pygame.transform.scale(zombie, (width, height))
-	```
-	
-- Then get your program to pause for a few seconds.
+--- code ---
+---
+language: python
+filename: scary_spot_the_difference.py
+line_numbers: true
+line_number_start: 
+highlight_lines: 18
+---
+import pygame
+from time import sleep
+from random import randrange
 
-	```python
-	sleep(3)
-	```
-	
-- Then you can blit the image to the display, and update the display.
+pygame.init()
 
-    ``` python
-	screen.blit(zombie, (0,0))
-	pygame.display.update()
-    ```
+width = pygame.display.Info().current_w
+height = pygame.display.Info().current_h
 
-- Save and run the program again, to see the new image being placed.
+screen = pygame.display.set_mode((width, height))
 
-- It's a little predictable at the moment, so you can add some randomness by changing the `sleep` time between the two images to a random number.
+difference = pygame.image.load('spot_the_diff.png')
+difference = pygame.transform.scale(difference, (width, height))
 
-	```python
-	sleep(randrange(5,15))
-	```
-	
+zombie = pygame.image.load('scary_face.png')
+zombie = pygame.transform.scale(zombie, (width, height))
+
+scream = pygame.mixer.Sound("scream.wav")
+
+screen.blit(difference, (0, 0))
+pygame.display.update()
+
+sleep(randrange(5,15))
+
+screen.blit(zombie, (0,0))
+pygame.display.update()
+
+pygame.quit()
+--- /code ---
+--- /task ---
+
+--- task ---
+Then add a line of code to start playing the sound just before the second image is shown, and add another line to stop the sound just before Pygame quits.
+
+--- code ---
+---
+language: python
+filename: scary_spot_the_difference.py
+line_numbers: true
+line_number_start: 
+highlight_lines: 18
+---
+import pygame
+from time import sleep
+from random import randrange
+
+pygame.init()
+
+width = pygame.display.Info().current_w
+height = pygame.display.Info().current_h
+
+screen = pygame.display.set_mode((width, height))
+
+difference = pygame.image.load('spot_the_diff.png')
+difference = pygame.transform.scale(difference, (width, height))
+
+zombie = pygame.image.load('scary_face.png')
+zombie = pygame.transform.scale(zombie, (width, height))
+
+scream = pygame.mixer.Sound("scream.wav")
+
+screen.blit(difference, (0, 0))
+pygame.display.update()
+
+sleep(randrange(5,15))
+
+screen.blit(zombie, (0,0))
+
+scream.play()
+
+pygame.display.update()
+
+scream.stop()
+
+pygame.quit()
+--- /code ---
+--- /task ---
+
+--- task ---
+Save and run your code to see if it works. Then surprise your friends by telling them you have made a 'spot the difference' game for them to play.
+--- /task ---
