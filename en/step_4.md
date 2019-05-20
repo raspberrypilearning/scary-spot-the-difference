@@ -10,7 +10,7 @@ Add a line of code to load the image. Put the new line above the `pygame.quit()`
 language: python
 filename: scary_spot_the_difference.py
 line_numbers: true
-line_number_start: 
+line_number_start: 1
 highlight_lines: 12
 ---
 import pygame
