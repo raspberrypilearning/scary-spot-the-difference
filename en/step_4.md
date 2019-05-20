@@ -59,7 +59,7 @@ pygame.quit()
 --- /code ---
 --- /task ---
 	
-These new lines of code only load the image into your computer's memory. Mow use the command `blit` to prepare the Pygame window to display the image. Then update the display to show the image.
+These new lines of code only load the image into your computer's memory. Now use the command `blit` to prepare the Pygame window to display the image. Then update the display to show the image.
 
 --- task ---
 Add the new lines shown below to prepare the Pygame window using `blit`, and to then update the display.
