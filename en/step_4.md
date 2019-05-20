@@ -38,7 +38,7 @@ The image may be too big or small for your monitor. Your next step is to scale t
 language: python
 filename: scary_spot_the_difference.py
 line_numbers: true
-line_number_start: 
+line_number_start: 1
 highlight_lines: 13
 ---
 import pygame
