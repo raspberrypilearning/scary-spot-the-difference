@@ -30,7 +30,7 @@ Now tell Pygame to create a large window in which the game can be played. Then g
 --- code ---
 ---
 language: python
-filename: scary_spot_the_difference
+filename: scary_spot_the_difference.py
 line_numbers: true
 line_number_start: 
 highlight_lines: 10, 12
