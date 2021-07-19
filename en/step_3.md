@@ -11,7 +11,7 @@ language: python
 filename: scary_spot_the_difference.py
 line_numbers: true
 line_number_start: 
-highlight_lines: 8-9
+line_highlights: 8-9
 ---
 import pygame
 from time import sleep
@@ -33,7 +33,7 @@ language: python
 filename: scary_spot_the_difference.py
 line_numbers: true
 line_number_start: 
-highlight_lines: 10, 12
+line_highlights: 10, 12
 ---
 import pygame
 from time import sleep
