@@ -30,6 +30,5 @@ steps:
   - internal
 - title: 'Challenge: take it further'
   challenge: true
-- title: What next?
   completion:
   - external
