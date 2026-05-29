@@ -42,16 +42,8 @@ pygame.quit()
 --- task ---
 Now add two new lines to prepare the window for displaying the new image, and then update the display.
 
---- hints --- --- hint ---
-You need to use the `screen.blit()` command with a file name.
---- /hint --- --- hint ---
-Here are the lines of code you need to add:
-```python
-screen.blit(zombie, (0,0))
-pygame.display.update()
-```
-
---- /hint --- --- hint ---
+--- hints ---
+--- hint ---
 Here is the full code:
 
 --- code ---
@@ -89,7 +81,9 @@ pygame.display.update()
 
 pygame.quit()
 --- /code ---
---- /hint --- --- /hints ---
+--- /hint ---
+--- /hints ---
+
 --- /task ---
 
 --- task ---
