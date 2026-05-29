@@ -5,15 +5,8 @@ Your program is a little predictable at the moment. Add some randomness by rando
 --- task ---
 Change the `sleep` pause between the two images being on screen to a random number.
 
---- hints --- --- hint ---
-The `randrange` function gets imported at the top of your program. Can you use this function to select a random number for the pause?
---- /hint --- --- hint ---
-Here is the line you need to add in:
-
-```python
-sleep(randrange(5,15))
-```
---- /hint --- --- hint ---
+--- hints ---
+--- hint ---
 Here is the full code:
 
 --- code ---
@@ -51,6 +44,8 @@ pygame.display.update()
 
 pygame.quit()
 --- /code ---
---- /hint --- --- /hints ---
+--- /hint ---
+--- /hints ---
+
 --- /task ---
 
