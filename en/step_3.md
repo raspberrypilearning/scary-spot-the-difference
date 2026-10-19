@@ -3,7 +3,7 @@
 Your first step is to display the `spot-the-diff.png` image on the screen. To do this, you need the computer to detect the size of your monitor. You need to know the monitor size because different types of monitors have different resolutions, and you need to know the resolution to display the image correctly.
 
 --- task ---
-Create two new variables called `width` and `height`. Then use the `display.Infor()` methods to find out the width and height of your monitor.
+Create two new variables called `width` and `height`. Then use the `display.Info()` methods to find out the width and height of your monitor.
 
 --- code ---
 ---
